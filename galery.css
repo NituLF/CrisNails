@@ -95,18 +95,21 @@ main {
 .circle2 {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
-    height: 200px;
-    width: 200px;
+    
     position: absolute;
     border-radius: 50%;
 }
 
 .circle1 {
+    height: 200px;
+    width: 200px;
     top: 20%;
     right: 4%;
 }
 
 .circle2 {
+    height: 300px;
+    width: 300px;
     bottom: 3%;
     left: 2%;
 }
