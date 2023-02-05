@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>galery</title>
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="./CSS/gallery.css">
     <script src="https://kit.fontawesome.com/a871b939c4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,64 +14,72 @@
     <nav>
         <div class="nav-links">
             <div class="user">
-                <img class="logo" src="./assets/CrisNailLogo.png" alt="">
+                <img class="logo" src="./assets/images/CrisNailLogo.png" alt="">
                 <!-- <h3 class="name">Cristiana Nitu</h3>
                     <p class="under-name">Nail Technician</p> -->
+            </div>
+            <div class="links">
+                <div class="link">
+                    <i class="fas fa-house nav-icon"></i>
+                    <li class="btn"><a href="./index.html">Home</a></li>
                 </div>
-                <div class="links">
-                    <div class="link">
-                        <i class="fas fa-house nav-icon"></i>
-                        <li class="btn"><a href="./index.html">Home</a></li>
-                    </div>
-                    <div class="link">
-                        <i class="fas fa-address-card nav-icon"></i>
-                        <li class="btn"><a href="./about.html">About</a></li>
-                    </div>
-                    <!-- <div class="link">
+                <div class="link">
+                    <i class="fas fa-address-card nav-icon"></i>
+                    <li class="btn"><a href="./about.html">About</a></li>
+                </div>
+                <!-- <div class="link">
                         <i class="fas fa-camera"></i>
                         <li><a href="galery">Galery</a></li>
                     </div> -->
-                    <div class="link">
-                        <i class="fas fa-bullseye nav-icon"></i>
-                        <li class="btn"><a href="./services.html">Services</a></li>
-                    </div>
-                    <div class="link">
-                        <i class="fas fa-envelope nav-icon"></i>
-                        <li class="btn"><a href="./contact.html">Contact</a></li>
-                    </div>
+                <div class="link">
+                    <i class="fas fa-bullseye nav-icon"></i>
+                    <li class="btn"><a href="./services.html">Services</a></li>
+                </div>
+                <div class="link">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <li class="btn"><a href="./contact.html">Contact</a></li>
                 </div>
             </div>
+        </div>
     </nav>
     <main>
         <h1>My Gallery</h1>
-        <section id="index-gallery" class="wrapper-gallery">
-                    <div class="gallery-img img1">
-                        <div><a href="#">This is a title</a></div>
+        <section id="index-gallery">
+            <div class="wrapper-gallery">
+                <div class="gallery">
+                    <div class="image"><span><img src="./assets/img3.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img3.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img4.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img4.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img4.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img3.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img7.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img7.jpeg" alt=""></span></div>
+                    <div class="image"><span><img src="./assets/img7.jpeg" alt=""></span></div>
+                </div>
+            </div>
+            <div class="preview-box">
+                <div class="details">
+                    <span class="title">
+                        Image <p class="current-img"></p>
+                        of <p class="total-img"></p>
+                    </span>
+                    <span class="icon fas fa-times"></span>
+                </div>
+                <div class="img-box">
+                    <div class="slide prev">
+                        <i class="fas fa-angle-left"></i>
                     </div>
-                    <div class="gallery-img img2">
-                        <div><a href="#">This is a title</a></div>
+                    <div class="slide next">
+                        <i class="fas fa-angle-right"></i>
                     </div>
-                    <div class="gallery-img img3">
-                        <div><a href="#">This is a title</a></div>
-                    </div>
-                    <div class="gallery-img img4">
-                        <div><a href="#">This is a title</a></div>
-                    </div>
-                    <div class="gallery-img img5">
-                        <div><a href="#">This is a title</a></div>
-                    </div>
-                    <div class="gallery-img img6">
-                        <div><a href="#">This is a title</a></div>
-                    </div>
-                    <div class="gallery-img img7">
-                        <div><a href="#">This is a title</a></div>
-                    </div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="shadow"></div>
         </section>
     </main>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
-
-    <script src="gallery.js"></script>
+    <script src="./JS/gallery.js"></script>
 </body>
 
 </html
