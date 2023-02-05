@@ -23,13 +23,15 @@ a:link {
 
 li {
     list-style-type: none;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    color: #303f3a;
 }
 
-i {
+.nav-icon {
     border: 1px solid #65dfc9;
     border-radius: 24px;
     background: linear-gradient(to right top, #fbfcfc, #3bedd2);
-    
     color: rgb(8, 8, 8);
     padding: 5px;
     margin-right: 4px;
@@ -125,7 +127,21 @@ Gallery
 
 */
 .wrapper-gallery {
-    width: 80vw;
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px 24px;
+}
+
+main h1 {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 44px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 32px;
+    padding: 2px 0;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
+
 }
 
 #index-gallery {
@@ -141,7 +157,7 @@ Gallery
     text-align: center;
     font-size: 24px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 #index-gallery .gallery-img {
@@ -190,3 +206,87 @@ Gallery
     grid-area: img7;
     background-image: url(./assets/img7.jpeg);
 }
+
+/* 
+Gallery titles
+*/
+
+.gallery-img div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-img a {
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gallery-img div:hover {
+    opacity: 0.8;
+    transition: all 300ms ease;
+}
+
+/* 
+pop window wheen clicked
+ */
+
+ .img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+ }
+
+ .img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+ }
+
+ /* Next image buttons */
+
+ .img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #02ceb0;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+ .img-btn-next:hover {
+    opacity: 0.8;
+ }
+
+ .img-btn-prev {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #02ceb0;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+ .img-btn-prev:hover {
+    opacity: 0.8;
+ }

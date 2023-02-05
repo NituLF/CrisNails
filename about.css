@@ -21,19 +21,22 @@ a:link {
     color: #050112;
 }
 
-li {
-    list-style-type: none;
-}
-
-i {
+.nav-icon {
     border: 1px solid #65dfc9;
     border-radius: 24px;
     background: linear-gradient(to right top, #fbfcfc, #3bedd2);
-    
     color: rgb(8, 8, 8);
     padding: 5px;
     margin-right: 4px;
 }
+
+li {
+    list-style-type: none;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    color: #303f3a;
+}
+
 
 i:hover {
     background: linear-gradient(to right top, #dcfbfa, #02c4ce);
