@@ -28,7 +28,7 @@ li {
     color: #303f3a;
 }
 
-i {
+.nav-icon {
     border: 1px solid #65dfc9;
     border-radius: 24px;
     background: linear-gradient(to right top, #fbfcfc, #3bedd2);
@@ -36,6 +36,10 @@ i {
     padding: 5px;
     margin-right: 4px;
 
+}
+
+.nav-anchor {
+    color: #3c4e48;
 }
 
 i:hover {
@@ -49,12 +53,14 @@ nav {
 }
 
 .nav-links {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
 }
+
 
 .logo {
     height: 100px;
@@ -63,7 +69,10 @@ nav {
 
 .links {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .link {
     font-size: 20px;
     display: flex;
@@ -81,7 +90,7 @@ nav {
 }
 
 .btn:hover {
-    background: linear-gradient(to right top, #80f0ee, #02c4ce);
+    background: linear-gradient(to right top, #1abc9c, #fcfcfb);
 }
 
 main {
@@ -95,7 +104,7 @@ main {
 .circle2,
 .circle3 {
     background: white;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
+    background: linear-gradient(to right bottom, #f8fafa, #037750);
     height: 200px;
     width: 200px;
     position: absolute;
@@ -103,8 +112,8 @@ main {
 }
 
 .circle1 {
-    top: 20%;
-    right: 24%;
+    top: 30%;
+    right: 5%;
 }
 
 .circle2 {
@@ -126,6 +135,7 @@ main {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
     margin-top: 40px;
     border-radius: 8px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* 
@@ -141,7 +151,7 @@ Price list
     padding: 4px;
     margin-top: 60px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
-
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -154,6 +164,7 @@ img {
 .services-container {
     width: 80vw;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .list {
@@ -168,3 +179,39 @@ img {
     padding: 50px 10px;
 }
 
+.delay {
+    margin-bottom: 14px;
+    padding: 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: #02ceb0;
+    color: #fff;
+}
+
+
+@media ( max-width: 768px) {
+    .circle1,
+    .circle2,
+    .circle3 {
+        display: none;
+    }
+
+    #services {
+        max-width: 600px;
+    }
+
+    .title {
+        max-width: 600px;
+    }
+}
+
+@media ( max-width: 480px) {
+    #services {
+        max-width: 400px;
+    }
+
+    .title {
+        max-width: 400px;
+    }
+}

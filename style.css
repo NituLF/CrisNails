@@ -33,6 +33,10 @@ li {
     margin-right: 4px;
 }
 
+.nav-anchor {
+    color: #3c4e48;
+}
+
 main {
     min-height: 100vh;
     background: linear-gradient(to right top, #51f5e2, #02ceb0);
@@ -51,13 +55,15 @@ main {
     z-index: 3;
     backdrop-filter: blur(20px);
     overflow: hidden;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .circle1,
 .circle2,
 .circle3 {
     background: white;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
+    background: linear-gradient(to right bottom, #f8fafa, #037750);
     height: 200px;
     width: 200px;
     position: absolute;

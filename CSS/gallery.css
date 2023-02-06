@@ -28,6 +28,10 @@ li {
     color: #303f3a;
 }
 
+.nav-anchor {
+    color: #3c4e48;
+}
+
 .nav-icon {
     border: 1px solid #65dfc9;
     border-radius: 24px;
@@ -38,7 +42,8 @@ li {
 }
 
 i:hover {
-    background: linear-gradient(to right top, #dcfbfa, #02c4ce);
+    background: linear-gradient(to right top, #1abc9c, #fcfcfb);
+
 }
 
 nav {
@@ -80,17 +85,13 @@ nav {
 }
 
 .btn:hover {
-    background: linear-gradient(to right top, #80f0ee, #02c4ce);
-
+    background: linear-gradient(to right top, #1abc9c, #fcfcfb);
 }
 
 main {
+    padding-top: 60px;
     min-height: 100vh;
     background: linear-gradient(to right top, #7dfced, #02ceb0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* 
@@ -100,29 +101,31 @@ Gallery
 */
 
 
-main h1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 60px 0 40px 0;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 32px;
-    padding: 2px 0;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
-
-}
 
 #index-gallery {
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
+    max-width: 1200px;
     padding: 14px 8px;
-    border-radius: 8px;
     z-index: 1;
     transition: all 300ms ease;
+    margin: 0 auto;
+}
 
+.title {
+    padding-top: 4px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper-gallery {
+    padding: 14px 8px;
     max-width: 1200px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper-gallery .gallery {
@@ -250,6 +253,15 @@ main h1 {
 
 @media ( max-width: 768px) {
 
+    .title {
+        max-width: 700px;
+        font-size: 24px;
+    }
+
+    #index-gallery {
+        max-width: 700px;
+    }
+
     .gallery {
         padding: 0 12px;
     }
@@ -260,6 +272,15 @@ main h1 {
 }
 
 @media ( max-width: 480px) {
+
+    #index-gallery {
+        max-width: 400px;
+    }
+
+    .title {
+        max-width: 400px;
+    }
+
     .gallery .image {
         width: 100%;
     }
