@@ -104,7 +104,7 @@ main {
 .circle2,
 .circle3 {
     background: white;
-    background: linear-gradient(to right bottom, #f8fafa, #037750);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     height: 200px;
     width: 200px;
     position: absolute;
@@ -136,6 +136,7 @@ main {
     margin-top: 40px;
     border-radius: 8px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+    animation: fade-up 650ms 800ms backwards;
 }
 
 /* 
@@ -152,12 +153,24 @@ Price list
     margin-top: 60px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+    animation: fade-up 450ms 800ms backwards;
 }
-
-img {
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.service-img img {
     width: 300px;
     height: 200px;
     border-radius: 8px;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+
 }
 
 
